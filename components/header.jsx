@@ -1,6 +1,13 @@
+"use client";
+
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Button } from "./ui/button";
+import { SignInButton, UserButton } from "@clerk/nextjs";
+import { Authenticated, Unauthenticated } from "convex/react";
+import { BarLoader } from "react-spinners";
 
 const Header = () => {
   return (
@@ -10,7 +17,7 @@ const Header = () => {
           {/* Logo */}
           <Link href={"/"} className="flex items-center">
             <Image
-                src="/app.png"
+                src="/PACo.png"
                 alt="P&C Logo"
                 width={500}
                 height={500}
@@ -27,11 +34,33 @@ const Header = () => {
 
 
             {/* Right Side Actions */}
+            <div className="flex items-center">
+
+            <Authenticated>
+              {/* Create Event */}
+
+              <UserButton />
+            </Authenticated>
+
+          
+
+            <Unauthenticated>
+              <SignInButton mode="modal">
+                <Button size="sm">Sign In</Button>
+              </SignInButton>
+            </Unauthenticated>
+           
+            </div>
 
 
         </div>
 
         {/* Mobile Search & Location */}
+
+        {/* Loader */}
+        <div className="absolute bottom-0 left-0 w-full">
+          <BarLoader width="100%" />
+        </div>
 
       </nav>
 
