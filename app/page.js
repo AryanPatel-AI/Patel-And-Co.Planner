@@ -30,7 +30,7 @@ export default function Home() {
             </p>
 
             <Link href="/explore">
-              <Button size="xl" className={"rounded-full"}>
+              <Button size="xl" className="rounded-full px-3 py-2">
                 Get Started
               </Button>
             </Link>

@@ -35,23 +35,23 @@ export const store = mutation({
       hasCompletedOnboarding: false,
       freeEventsCreated: 0,
       createdAt: Date.now(),
-      updatedAt: Date.now(), 
+      updatedAt: Date.now(),
     });
   },
 });
 
-export const getCurrent =query({
+export const getCurrentUser = query({
   handler: async (ctx) => {
     const identity = await ctx.auth.getUserIdentity();
     if (!identity) {
-     return null;
+      return null;
     }
     const user = await ctx.db.query("users").withIndex("by_token", (q) =>
       q.eq("tokenIdentifier", identity.tokenIdentifier),
-     ).unique();
+    ).unique();
 
     if (!user) {
-     throw new Error("User not found");
+      throw new Error("User not found");
     }
     return user;
 

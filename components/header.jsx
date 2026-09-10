@@ -11,7 +11,7 @@ import { useStoreUser } from "@/hooks/use-store-user";
 import { Building, Plus, Ticket } from "lucide-react";
 
 const Header = () => {
-  
+
   const { isLoading } = useStoreUser();
 
 
@@ -23,24 +23,24 @@ const Header = () => {
           {/* Logo */}
           <Link href={"/"} className="flex items-center">
             <Image
-                src="/PACo.png"
-                alt="P&C Logo"
-                width={500}
-                height={500}
+              src="/PACo.png"
+              alt="P&C Logo"
+              width={500}
+              height={500}
               className="w-full h-11"
               priority
             />
           </Link>
 
 
-            {/* Search & Location - Desktop Only */}
-            {/* <div className="hidden md:flex flex-1 justify-center">
+          {/* Search & Location - Desktop Only */}
+          {/* <div className="hidden md:flex flex-1 justify-center">
              <SearchLocationBar />
             </div> */}
 
 
-            {/* Right Side Actions */}
-            <div className="flex items-center">
+          {/* Right Side Actions */}
+          <div className="flex items-center">
 
             <Link href="/pricing" className="mr-2">
               <Button variant={"ghost"} size="sm">Pricing</Button>
@@ -79,15 +79,15 @@ const Header = () => {
               </UserButton>
             </Authenticated>
 
-          
+
 
             <Unauthenticated>
               <SignInButton mode="modal">
                 <Button size="sm">Sign In</Button>
               </SignInButton>
             </Unauthenticated>
-           
-            </div>
+
+          </div>
 
 
         </div>
@@ -97,7 +97,7 @@ const Header = () => {
         {/* Loader */}
         {isLoading && (
           <div className="absolute bottom-0 left-0 w-full">
-            <BarLoader width={"100%"} color="#a855f7"/>
+            <BarLoader width={"100%"} color="#a855f7" />
           </div>
         )}
 
