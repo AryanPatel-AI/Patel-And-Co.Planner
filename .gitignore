@@ -10,3 +10,5 @@ node_modules
 .claude/skills
 AGENTS.md
 CLAUDE.md
+.vercel
+.env*
