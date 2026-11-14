@@ -16,7 +16,6 @@
   <img src="https://img.shields.io/badge/Clerk-Authentication-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk" />
   <img src="https://img.shields.io/badge/Google%20Gemini-AI%20Assistant-8E75FF?style=for-the-badge&logo=google&logoColor=white" alt="Gemini AI" />
   <img src="https://img.shields.io/badge/Tailwind%20CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS v4" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License" />
 </p>
 
 ---
@@ -211,9 +210,3 @@ The user experience and interfaces are inspired by curated high-conversion patte
 - [ ] Real-time attendee chat & organizer announcements
 - [ ] Automated email confirmations & calendar invite downloads (.ics)
 - [ ] Stripe / Razorpay online payment integration for paid tickets
-
----
-
-## 📄 License
-
-This project is open-source and licensed under the [MIT License](LICENSE).
