@@ -1,6 +1,12 @@
 node_modules
-node_modules
 .next
 .env
-
 .env.local
+
+# Local AI agent skills and instruction files (keep locally, never commit)
+.agents/skills/
+.agents/skills
+.claude/skills/
+.claude/skills
+AGENTS.md
+CLAUDE.md
